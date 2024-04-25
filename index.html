@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NARCISSUS</title>
+	<script>
+	</script>
+	<style>
+    @import url('https://fonts.cdnfonts.com/css/roslindale');
+    @font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');}
+    @font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-weight: 400;
+    font-style: normal;}
+
+    body, h1, h2, h3, p, ul, section, footer, body {margin: 0; padding: 0;}
+    .wrap{width: 1000px; margin: auto; position: relative;}
+    html{ font-family: 'Pretendard-Regular'; line-height: 1.45; color: #174036; font-size: 21px; background: linear-gradient(90deg, rgba(255,250,236,1) 0%, rgba(255,239,224,1) 100%); overflow-x: hidden;}
+    .cursor_p{ cursor: url('cursor_p.png') 15 15, auto;}
+
+
+     /*글자, 배경컬러*/
+     .green{color: #174036; }
+     .star{width: 34px}
+
+    /*네비게이션*/
+     .nav{width: 1000px; height: 84px;position: fixed; margin: 0 auto; left: 0; right: 0; z-index: 2;}
+     .flex{display: flex; justify-content: space-between; padding-top: 10px}
+     .logo{font-family: 'Roslindale', serif; font-style: normal; font-weight: 300; font-size: 24px; line-height: 1.5; color: #174036;}
+     .menu{width: 378px;}
+     .menu li {list-style-type: none;}
+     .menu li a{display:block; text-decoration: none; color: #174036; font-family: 'Roslindale', serif; font-style: normal; font-weight: 300;font-size: 24px;}
+     .menu li a:hover{opacity: 50%;}
+
+
+     .navw{width: 1000px; height: 0px; position: sticky; margin: 0 auto;
+			left: -1px; right: 0px; z-index: 4; top: 20px;}
+     .flexw{display: flex; justify-content: space-between; position: sticky;}
+     .logow{font-family: 'Roslindale', serif; font-style: normal; font-weight: 300; font-size: 24px; line-height: 1.5; color: #FFF6EA;}
+     .menuw{width: 378px;}
+     .menuw li {list-style-type: none;}
+     .menuw li a{display:block; text-decoration: none; color: #FFF6EA; font-family: 'Roslindale', serif; font-style: normal; font-weight: 300;font-size: 24px;}
+     .menuw li a:hover{opacity: 50%;}
+
+     /*header*/
+     .video {width: 1920px; position: absolute; position: top: 0px; z-index: -1;}
+     .wrapheader{position: relative; width: 100%;}
+     .bigstar{width: 46px; position: absolute; top: 300px; left: 1000px}
+     .titleimg{width: 1578px; padding-top: 320px; margin: auto; display: block; padding-bottom: 363px;}
+
+    /*we're narssist*/
+    .wrapnar{width: 1000px; margin: auto; position: relative;}
+    .bigg{font-size: 100px; font-family: 'Roslindale', serif; font-style: normal; font-weight: 300; line-height: 1.3; width: 800px; padding-top: 300px;}
+    .sp{width: 300px; word-break: keep-all; padding-left: 700px; padding-top: 270px;}
+    .sp2{width: 300px; word-break: keep-all; padding-left:0; padding-top: 140px; padding-bottom: 300px;}
+    .david{position: absolute; top: 480px; left: 110px; animation: moveUpAndDown 3s infinite alternate;}
+
+    @keyframes moveUpAndDown {
+    from {transform: translateY(0); }
+    to {transform: translateY(-80px); }}
+
+
+
+
+     /*section1*/
+  .wrapn{width: 1000px; margin: auto; position: relative;}
+	.flex2{display: flex; justify-content: space-between; padding-top: 200px; list-style-type: none; position: relative; height: 1110px}
+	.menu2{margin-left: 100px; color: #174036; line-height: 1.3;}
+	.girl{width: 572px; position: sticky; top: 80px;}
+	.menu2 li {list-style-type: none; }
+	.menu2 li a {display: block; padding-bottom: 40px;}
+	.rotate1{font-family: 'Roslindale', serif; font-style: normal; font-weight: 300; font-size: 92px; color: #174036; transform: rotate(-90deg); position: absolute; top: 524px; left: -270px}
+	.rotate2{font-family: 'Roslindale', serif; font-style: normal; font-weight: 300; font-size: 56px; color: #174036;transform: rotate(90deg); position: absolute; top: 260px; left: 515px}
+
+	.menu2 li a span {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;}
+
+.flex2:hover .menu2 li a span {
+    opacity: 1;}
+
+	 /*section2*/
+	 .s2{padding-top: 300px;}
+	 .t1 {font-family: 'Roslindale', serif; font-style: normal; font-weight: 300; font-size: 106px; color: #174036;}
+	 .t2{color: #174036;  font-size: 84px; padding-left: 225px; padding-right: 28px; align-items: center;}
+	 .t3{color: #174036; font-size: 84px; padding-bottom: 100px}
+	 .flex3{display: flex; justify-content: space-between; width: 516px; list-style-type: none; }
+
+	 .t1, .t3 {
+    transition: transform 0.5s ease;
+    transform: translateX(200px); }
+
+	.wrap.s2.mi:hover .t1, 
+	.wrap.s2.mi:hover .t3 {
+    transform: translateX(0); 
+	}
+
+	.t2{
+    transition: transform 0.5s ease;
+    transform: translateX(-300px); }
+
+	.wrap.s2.mi:hover .t2 {
+    transform: translateX(0); 
+	}
+
+	 /*section3*/
+	 .S3{padding-bottom: 146px; position: relative;}
+	 .flex4{display: flex; justify-content: space-between; list-style-type: none; align-items: center;}
+	 .menu4{display: flex; width: 400px; list-style-type: none; padding: 7px}
+	 .menu4 li{ padding-right: 15px;}
+	 .dw{font-family: 'Roslindale', serif; font-style: normal; font-weight: 300; font-size: 36px; color: #174036;}
+	 .close{line-height: 1.5; color: #174036; background-color: #FFF6EA; font-size: 16px; text-decoration: underline;}
+	 .mi{margin-bottom: -25px}
+
+	 .line {border-top: 1px solid #174036;}
+	 .basic{font-size: 21px; padding-top: 28px; color: #174036; line-height: 1.5; padding-left: 40px;}
+	 .small {font-size: 16px; padding-top: 28px; color: #174036; padding-bottom: 56px; }
+	 .bt{padding-bottom: 146px}
+	 .dc{width: 800px; word-break: keep-all; display: none;}
+	 .dc2{width: 800px; word-break: keep-all; display: none;}
+
+	 .flex4:hover {cursor: pointer;}
+
+	 #toggle {
+    width: 200px; 
+    height: 70px; 
+    position: absolute; 
+    top: -3px; 
+    left: 870px;}
+
+	#toggle:checked + .dc {display: block;}
+
+	 #toggle2{
+    width: 200px; 
+    height: 70px; 
+    position: absolute; 
+    top: -3px; 
+    left: 870px;}
+
+	#toggle2:checked + .dc2 {display: block;}
+
+
+	 /*section4*/
+	 .s4{background: linear-gradient(to bottom,  #FFF6EA 0%, #FFF6EA 35px, #174036 35px, #174036 100%);}
+
+	 .it{font-family: 'Roslindale', serif; font-style: normal; font-weight: 300; font-size: 92px; color: #FFFAEC; padding-left: 14px;}
+	 .ip{color: #FFFAEC; font-size: 18px; line-height: 1.6; padding-left: 514px; padding-bottom: 64px; width: 500px; word-break: keep-all;}
+	 .flex5{display: flex; justify-content: space-between; list-style-type: none;}
+	 .mwrap{display: flex; width: 1000px; display: flex; justify-content: flex-end; padding-top: 100px; padding-bottom: 28px; margin: auto;}
+
+
+	 .s4 .flex6 img {
+    opacity: 0; 
+    transform: scale(0.8);
+    transition: all 1s ease-in-out; }
+
+	.s4:hover .flex6 img {
+    opacity: 1;
+    transform: scale(1);}
+
+  .flex6 ul:nth-child(1) {
+    transform: translateX(110px);
+    transition: transform 0.9s ease-in-out;}
+
+	.s4:hover .flex6 ul:nth-child(1) {
+    transform: translateX(0);}
+
+   .flex6 ul:nth-child(3) {
+    transform: translateX(-110px);
+    transition: transform 0.9s ease-in-out;}
+
+	.s4:hover .flex6 ul:nth-child(3) {
+    transform: translateX(0);}
+
+   .flex6 li a:nth-child(1) {
+    transform: translateY(-30px);
+    transition: transform 0.9s ease-in-out;}
+
+
+	.s4:hover .flex6 li a:nth-child(1) {
+    transform: translateX(0);}
+
+
+
+    .flex6{display: flex; justify-content: space-between; list-style-type: none; }
+	.menu6{padding-right: 14px;}
+	.menu6 li {list-style-type: none;}
+	.menu6 li a {display: block; padding-bottom: 14px;}
+.vertical-line {width: 2px; height: 0px; background-color: #FFFAEC;
+	margin: auto; animation: drawLine 3s linear infinite forwards; position: absolute; margin: auto;left: 0%;right: 0%;}
+
+	@keyframes drawLine {0% {height: 0px;} 60% {height: 154px;} 100% {height: 154px;}}
+
+	.middle{padding-top: 14px; padding-bottom: 40px; text-align: center; animation: movestar 3s linear infinite forwards; position: absolute; padding-top: 14px; margin: auto; left: 0%;right: 0%;}
+
+	@keyframes movestar {0% {transform: translateY(0px);} 60% {transform: translateY(154px);} 100% {transform: translateY(154px);}}
+	
+
+	.free{display: flex;}
+
+	.flex7{align-items: center; width: 800px; display: flex; justify-content: space-between; list-style-type: none; position: relative; padding-bottom: 208px; margin: auto; font-size: 16px; padding-top: 280px;}
+	.menu7{color: #FFFAEC;}
+	.menu7 li {list-style-type: none;}
+	.menu7 li a {display: block; padding-bottom: 14px}
+	.narp{font-size: 48px; font-family: 'Roslindale', serif; font-style: normal; font-weight: 300; line-height: 1.3;}
+	.menu7 li b {font-size: 20px;  padding: 9px 23px;background-color: #FFFAEC; color: #174036; border-radius: 20px; margin-right: 14px}
+	.basic2{font-size: 21px; padding-left: 24px;}
+
+
+	.tag1{position: absolute; top: 324px; left: 218px;}
+	.tag2{position: absolute; top: 402px; left: 160px;}
+	.tag3{position: absolute; top: 700px; left: -48px;}
+	.tag4{position: absolute; top: 840px; left: 68px;}
+	.tag{font-size: 24px; padding: 10px 29px; background-color: rgba(23, 64, 54, 0.8); color: #FFFAEC; border-radius: 40px;}
+
+	.tag1, .tag2, .tag3, .tag4 {
+    opacity: 0;
+    transition: opacity 0.5s ease;}
+
+	.flex7:hover .tag4 {
+    transition-delay: 0.3s;
+    opacity: 1;}
+
+	.flex7:hover .tag3 {
+    transition-delay: 0.6s;
+    opacity: 1;}
+
+	.flex7:hover .tag2 {
+    transition-delay: 0.9s;
+    opacity: 1;}
+
+	.flex7:hover .tag1 {
+    transition-delay: 1.2s;
+    opacity: 1;}
+
+
+
+
+	 /*section5*/
+	.flex8{display: flex; justify-content: space-between; padding-top: 40px; padding-bottom: 28px; list-style-type: none; position: relative; font-size: 18px;}
+	.menu2 li a {display: block; padding-bottom: 40px;}
+	.button {font-size: 100px; font-family: 'Roslindale', serif; font-style: normal; font-weight: 300; line-height: 1.3; width: 800px;}
+	.tc{padding-bottom: 100px;}
+
+	.button span {transition-delay: 0.2s}
+  .button:before,
+		
+	.button:after {position: absolute;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: .3s,opacity .3s;
+    width: 700px}
+
+    .button:after {
+    content: attr(data-active);
+    transform: translate(-30%,0);}
+
+    .button:before {
+    content: attr(data-hover);
+    transform: translate(30%,0);}
+
+
+	.button:hover span,
+	.button:active span {
+    opacity: 0;
+    transform: scale(0.3);}
+
+
+	.button:hover:before,
+	.button:active:after {
+    opacity: 1;
+    transform: translate(0,0);
+    -webkit-transition-delay: .3s;
+    -moz-transition-delay: .3s;
+    -o-transition-delay: .3s;
+    transition-delay: .3s;
+		}
+
+      /*follow text*/
+    .containerflow{ border: 1px solid #174036; height: 70px; width: 100%; overflow: hidden; }
+	.ft {display: flex; flex: 0 0 auto; gap: 0;font-size: 42px; font-family: 'Roslindale', serif; font-style: normal; font-weight: 300; height: auto; white-space: nowrap; position: relative; animation: textLoop 10s linear infinite ; list-style-type: none; animation-play-state: running; transition: 0.3s; padding-top: 5px}
+    .ft li{padding-right: 50px}
+    .b {display: flex; flex: 0 0 auto; gap: 0;font-size: 42px; font-family: 'Roslindale', serif; font-style: normal; font-weight: 300; height: auto; white-space: nowrap; position: relative; animation2: textLoop2 10s linear infinite; list-style-type: none; animation-play-state: running; transition: 0.3s;}
+    
+	@keyframes textLoop {
+    0% {-webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);}
+    100% {-webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);}}
+
+    @keyframes textLoop2 {
+    0% {-webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);}
+    100% {-webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);}}
+ 
+
+	/*section6*/
+	
+	.flex9{display: flex; justify-content: space-between; padding-top: 225px; list-style-type: none; position: relative; align-items: center; font-size: 19px;}
+	.menu9{padding-right: 22px; width: 480px; word-break: keep-all;}
+	.menu9 li {list-style-type: none;}
+	.menu9 li a {display: block; padding-bottom: 28px; font-size: 38px;}
+
+	.flexx{display: flex; justify-content: space-between; padding-top: 225px; list-style-type: none; position: relative; align-items: center; font-size: 19px}
+	.menu10{padding-left: 94px; width: 578px; word-break: keep-all;}
+	.menu10 li {list-style-type: none; }
+	.menu10 li a {display: block; padding-bottom: 28px; font-size: 38px;}
+	.down{padding-bottom: 225px;}
+
+	.basic3{font-size: 21px;padding-right: 148px}
+	.ioio{transform: rotate(5deg);}
+	.igig{transform: rotate(-5deg);}
+
+	.flex9 .menu9:hover ~ li img {
+    transform: rotate(0deg); 
+    transition: transform 0.3s ease; }
+  .ioio:hover {
+    transform: rotate(0deg); 
+    transition: transform 0.3s ease;}
+
+   .flexx li:hover img {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;}
+
+   	.igig:hover {
+    transform: rotate(0deg); 
+    transition: transform 0.3s ease;}
+
+	/*section7*/
+	.udd{padding-bottom: 28px; width: 680px; word-break: keep-all; padding-top: 144px;}
+	.mid{text-align: center; padding-top: 200px;  position: relative;}
+	.flex10{display: flex; justify-content: space-between; padding-top: 28px; list-style-type: none; position: relative; font-size: 36px; line-height: 1.4}
+	.ud{padding-bottom: 14px;}
+
+	.flex10 li:first-child:hover img {
+    content: url('image_17_trans.png');transition: content 1s ease-in-out;
+    transition-delay: 1s;}
+  .flex10 li:nth-child(2):hover img {
+    content: url('image_18_trans.png');transition: content 1s ease-in-out;
+    transition-delay: 1s;}
+	.flex10 li:nth-child(3):hover img {
+    content: url('image_19_trans.png');transition: content 1s ease-in-out;
+    transition-delay: 1s;}
+
+	/*playlist*/
+	.pl {width: 116px; transition: width 0.3s ease;}
+	.pl:hover {width: 256px;}
+
+	.container {padding-top: 436px; display: flex; justify-content: center; align-items: center; }
+	.circle {position: relative; width: 884px; height: 596px;}
+	.image {position: absolute; margin: auto;left: 0%;right: 0%;
+	 top: 0px; font-size: 16px; text-decoration: underline; width: 130px; }
+	.img{width: 130px; } 
+	.img:hover {width: 180px; height: auto; transition: width 0.3s ease;}
+
+	.image:nth-child(1) { transform: rotate(0deg) translate(442px) rotate(0deg); }
+	.image:nth-child(2) { transform: rotate(37deg) translate(300px) rotate(-37deg); }
+	.image:nth-child(3) { transform: rotate(90deg) translate(298px) rotate(-90deg); }
+	.image:nth-child(4) { transform: rotate(143deg) translate(300px) rotate(-143deg); }
+	.image:nth-child(5) { transform: rotate(180deg) translate(442px) rotate(-180deg); }
+	.image:nth-child(6) { transform: rotate(217deg) translate(300px) rotate(-217deg); }
+	.image:nth-child(7) { transform: rotate(270deg) translate(298px) rotate(-270deg);}
+	.image:nth-child(8) { transform: rotate(323deg) translate(300px) rotate(-323deg); } 
+
+
+	.lm{padding-top: 444px; position: absolute; font-size: 56px; font-family: 'Roslindale', serif; font-style: normal; font-weight: 300; margin: auto;left: 0%;right: 0%;}
+
+	.tpl {font-family: 'Roslindale', serif; font-style: normal; font-weight: 300; font-size: 106px; color: #174036;}
+
+	/*section8 그래프 */
+
+	.won {width: 130px; height: 130px; border-radius: 50%; background-color: #FFFAEC; display: flex; font-size: 16px; position: absolute; justify-content: center; align-items: center; font-family: 'Roslindale', serif; font-style: normal; font-weight: 300; top: 395px; left: 435px}
+
+   .backgroundgreen{background-color:#174036; position: relative; z-index: -4; z-index: 2; background: linear-gradient(to bottom,  #FFF6EA 0%, #FFF6EA 35px, #174036 35px, #174036 100%);}
+	.review{padding-top: 14px; padding-bottom: 276px; position: absolute; font-size: 56px; font-family: 'Roslindale', serif; font-style: normal; font-weight: 300; color: #FFFAEC;}
+
+	.backgroundgreen .yly {
+    opacity: 0; 
+    transform: scale(0.8);
+    transition: all 1s ease-in-out; }
+
+	.backgroundgreen :hover .d {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0s;}
+
+.backgroundgreen :hover .y {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s; }
+
+.backgroundgreen :hover .l {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1s}
+
+.backgroundgreen :hover .s {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1.5s; }
+
+	.yly{font-size: 36px; color: #FFFAEC;}
+	.d{position: absolute; top: 300px; left: 0px}
+	.y{position: absolute; top: 350px; left: 100px}
+	.l{position: absolute; top: 630px; left: 500px}
+	.s{position: absolute; top: 530px; left: 820px}
+
+	.wrap12{position: absolute; top: 300px; left:0}
+	.flex12{display: flex; justify-content: space-between; font-size: 16px; font-family: 'Roslindale', serif; font-style: normal; font-weight: 300; color: #FFFAEC; list-style-type: none; z-index: 0; position: relative; padding-top: 415px; padding-bottom: 400px}
+
+	.sero{width: 2px; height: 524px; background-color: #FFFAEC; margin: auto; z-index: -1; position: absolute; top: 140px; left: 500px}
+	.garo{width: 1000px; height: 2px; background-color: #FFFAEC; position: absolute; top: 400px; z-index: 0}
+	.imager{font-size: 16px; color: #FFFAEC; font-size: 16px; width: 138px; word-break: keep-all;}
+
+	.q{position: absolute; top: 100px; left: 750px}
+	.w{position: absolute; top: 200px; left: 600px}
+	.e{position: absolute; top: 170px; left: 70px}
+	.r{position: absolute; top: 470px; left: 670px}
+	.t{position: absolute; top: 570px; left: 200px}
+
+
+	.img30{width: 900px; padding: 220px 50px;  margin: auto;}
+
+	
+	/*footer*/
+
+
+     .flex11{display: flex; justify-content: space-between; padding-top: 70px; font-size: 16px; position: relative;}
+     .fm {width: 640px;}
+     .fm li {list-style-type: none;}
+     .fm li b{display:block; text-decoration: underline; padding-bottom: 54px; padding-top: 10px}
+     .fm li a{display:block; text-decoration: none; font-size: 26px; padding-bottom: 15px; padding-right: 128px; color: #174036;}
+     .fm li c{display:block; text-decoration: none; padding-bottom: 54px; padding-bottom: 25px}
+     .fm li d{display:block; text-decoration: none; font-family: 'Pretendard-Medium';}
+     .laststar1{width: 34px; position: absolute; top: 158px; left: 130px;}
+     .laststar2{width: 34px; position: absolute; top: 210px; left: 130px;}
+     .laststar3{width: 34px; position: absolute; top: 262px; left: 130px;}
+     .laststar4{width: 34px; position: absolute; top: 315px; left: 130px;}
+
+     .t4{font-size: 56px; font-family: 'Roslindale', serif; font-style: normal; font-weight: 300;}
+     .last{width: 724px; padding-left: 340px; padding-top: 41px;} 
+
+	</style>
+
+
+<body class="cursor_p">
+	<nav>
+		<div class="nav flex">
+		<div class="logo flex"> NARCISSUS </div>
+		<ul class="menu flex">
+		<li> <a href="#a">About</a></li>
+		<li> <a href="#b">Package</a></li>
+		<li><a href="#c">Playlist</a></li>
+		<li><a href="#d">Review</a></li>
+		</ul>	
+	</nav>
+	<header id="e" class="header">
+		<div>
+		<div class="navw flexw">
+		<div class="logow flexw"> NARCISSUS </div>
+		<ul class="menuw flexw">
+		<li> <a href="#a">About</a></li>
+		<li> <a href="#b">Package</a></li>
+		<li><a href="#c">Playlist</a></li>
+		<li><a href="#d">Review</a></li>
+		</div>	
+		<p>
+		<video class="video plz" src="narcissm_video.mp4" autoplay muted loop></video> </p>
+		<div class="wrapheader">
+		<img class="titleimg" src="title.png">
+		</div>
+	</header>
+
+
+	<section class="wrapnar">
+	<p id="a" class="bigg">We’re <br>NARCISSIST</p>
+	<p class ="sp">나르시스트만큼 수없이 사랑에 빠져 본 사랑의 전문가가 있을까요?</p>
+	<p class = "sp2">당신이 가진 문제가 사랑이라면 당연히 해결해줄 수 있어요</p>
+	<img class="david" src="image_37.png">
+
+
+
+	</section>
+
+	<section>
+	<div class="flex2 wrapn">
+	<li><img class="girl" src="image_1.png"></li>
+	<ul class="menu2">
+	<li>
+		<a><img src="image_2.png"> <br>
+      <span style="transition-delay: 0s;">외로워서</span>
+      <span style="transition-delay: 0.2s;"> 누구라도</span>
+        <br>
+       <span style="transition-delay: 0.9s;"> 사랑하고</span>
+       <span style="transition-delay: 1.2s;"> 싶나요?</span>
+		</a>
+		<a><img src="image_3.png"><br>
+		<span style="transition-delay: 2s;">나를</span>
+    <span style="transition-delay: 2.2s;"> 사랑하지도</span>
+    <span style="transition-delay: 2.4s;"> 않던</span>
+    <br>
+   <span style="transition-delay: 3.1s;"> 전</span>
+    <span style="transition-delay: 3.3s;"> 애인을</span>
+    <span style="transition-delay: 3.5s;"> 잊지</span>
+    <span style="transition-delay: 3.7s;"> 못하겠나요?</span>
+		</a>
+		<a><img src="image_4.png"> <br>
+		 <span style="transition-delay: 4.5s;">나</span>
+        <span style="transition-delay: 4.6s;"> 자신을</span>
+        <span style="transition-delay: 4.9s;"> 사랑하고</span>
+        <span style="transition-delay: 5.1s;"> 싶나요?</span>
+		</a>
+	</li>
+	</ul>
+	<p class="rotate1">NARCISSUS</p>
+	<p class="rotate2">ABOUT</p>
+	</div>
+	</section>
+
+	<section class="wrap s2 mi">
+	<p class="t1 mi">NARCISSUS</p>
+	<div class="t2 flex3 mi">
+	<li>FOR</li>
+	<li><img src="image_5.png"></li>
+	</div>
+	<p class="t3">LOVE ADDICTS</p>
+	</section>
+
+	
+	<section class="s3">
+
+	<div class="line"></div>
+	<label for="toggle">	
+	<div class="wrap">
+    <div class="flex4">
+        <ul class="menu4 dw">
+            <li><img class="star" src="star.png"></li>
+            <li>Don't Worry!</li>
+            
+        </ul>
+        <div class="close">click</div>
+    </div></label>
+    <input type="checkbox" id="toggle"  style="display: none;">
+    
+    
+    <p class="small dc">We've got this!<span class="basic">어떤 고민을 가지고 계시든간에, 걱정마세요! 당신의 고민이 자기애가 너무 넘치는 게 아니라면! 나르키소스가 당신을 위해 사랑하기 딱 좋은 사람을 소개해드리겠습니다! 이 사람은 절대 당신에게 먼저 이별을 고하지도 않을거고, 당신이랑 완벽하게 잘 맞을겁니다.</span></p>
+    
+</div>
+
+<div class="line"></div>
+	<label for="toggle2">	
+	<div class="wrap">
+    <div class="flex4">
+        <ul class="menu4 dw">
+            <li><img class="star" src="star.png"></li>
+            <li>Caution!</li>
+            
+        </ul>
+        <div class="close">click</div>
+    </div></label>
+    <input type="checkbox" id="toggle2"  style="display: none;">
+    
+    
+    <p class="small dc2">We've got this!<span class="basic">맘에 들지 않는 부분이 있어도 평생 데리고 살아야 합니다. 이 점에 대해서 나르키소스는 일절 책임지지 않습니다.</span></p>
+</div>
+
+
+
+	<div class="bt"></div>
+	</section>
+
+
+	<section class="s4">
+
+		<div>
+
+		<div class="navw flexw">
+		<div class="logow flexw"> NARCISSUS </div>
+		<ul class="menuw flexw">
+		<li> <a href="#a">About</a></li>
+		<li> <a href="#b">Package</a></li>
+		<li><a href="#c">Playlist</a></li>
+		<li><a href="#d">Review</a></li>
+		</div>	
+		<div class="mwrap flex4">
+		<li><img class="star" src="image_7.png"></li>
+		<li class="it">LOVE YOURSELF</li>
+		</div>
+	<div id="b" class="wrap">
+	<p class="ip">나르키소스는 몇가지 상품을 통해 당신이 가장 빠르게 사랑에 빠질 수 있도록 돕습니다. 그리스 시대부터 전해 내려오는 전통있는 방식에서 모티프를 따왔지만, 좀 더 쉽게 접근할 수 있도록 개량했습니다.</p>
+
+	<div class="flex6 wrap">
+	<ul class="menu6">
+	<li>
+		<a><img src="image_8.png"></a>
+		<a><img src="image_9.png"></a>
+	</li>
+	</ul>
+	<ul class="menu6">
+	<li>
+		<a><img src="image_10.png"></a>
+		<a><img src="image_13.png"></a>
+	</li>
+	</ul>
+	</ul>
+	<ul class="menu6">
+	<li>
+		<a><img src="image_11.png"></a>
+		<a><img src="image_12.png"></a>
+	</li>
+	</ul>
+	</div>
+
+	<div class="vertical-line"></div>
+	<div class="middle"><img class="star" src="image_7.png"></div>
+
+
+	<div class="flex7">
+		<div class="tag tag1">MIRROR</div>
+		<div class="tag tag2">DISH</div>
+		<div class="tag tag3">FLOWER</div>
+		<div class="tag tag4">YOU</div>
+        <li><img src="image_14.png"></li>
+        <ul class="menu7">
+            <li>
+                <a class="narp">NARCISSM<br>PACKAGE</a>
+                <a style="margin-bottom: 45px;">
+                <a>01<span class="basic2"> 비치는 것</a>
+                <a><b>접시</b> <b>거울</b></a>
+                <a style="margin-bottom: 20px;">
+                <a>02<span class="basic2"> 당신을 위한 꽃</a>
+                <a><b>수선화</b></a>
+            </li>
+        </ul>
+    </div>
+	</section>
+
+	<section class="wrap">
+	<div class="flex8">
+	<li>U</li>
+	<li>I</li>
+	<li>W</li>
+	</div>
+	<div class="button" type="button" data-hover="Until. it. works." ><span>Mirror. Dish. Flower.</span></div>	
+	<div class="button tc">Three Clear
+	Solutions.</div>
+	<div class="flex8">
+	<li>P</li>
+	<li>O</li>
+	<li>N</li>
+	</div>
+	</section>
+	
+	<section class="containerflow">		
+	<div class="ft">
+	<li>NARCISSUS</li>
+	<li>LOVE YOURSELF</li>
+	<li>NARCISSISM</li>
+	<li>LOVE MYSELF</li>
+	<li>NARCISSUS</li>
+	<li>LOVE YOU</li>
+	<div class="b">
+	<li>NARCISSUS</li>
+	<li >LOVE YOURSELF</li>
+	<li>NARCISSISM</li>
+	<li>LOVE MYSELF</li>
+	<li>NARCISSUS</li>
+	<li>LOVE YOU</li>
+	</div>
+	</div>
+	</section>
+
+	<section>
+
+	<div class="flex9 wrap">
+        <ul class="menu9">
+            <li>
+                <a> <span class="basic3">01</span> DISH.<br>
+            	제공된 접시에 물을 담고, 잔잔한 수면을 바라보세요. 아름다운 자신의 모습이 비칠거에요.</a>
+                <b>아름답지 않아 보인다고요? 잘못 보신 겁니다! 담겨있는 찬물로 세수한 뒤 다시 바라보세요. 아름다워 보일 때까지 세수하면 고민 해결! 찬물 세수를 많이 해서 감기에 걸리셔도 책임지지 않습니다.</b>
+             </li>
+        </ul>
+        <li><img class="ioio" src="image_15.png"></li>
+    </div>
+
+    <div class="flexx wrap">
+    		<li><img class="igig" src="image_16.png"></li>
+        <ul class="menu10">
+            <li>
+                <a> <span class="basic3">02</span> MIRROR.<br>
+            	거울을 가만히 쳐다보세요. 사랑스러운 자신의 모습이 비칠거에요.사랑스럽지 않다면 ‘나는 사랑스럽다’ 10번을 외치고 다시 바라보세요.</a>
+                <b>12시를 넘어서 거울을 보다가 자기 자신이 아닌 다른 이상한 것이 비쳐도 Narcissus는 책임지지 않습니다. 구호를 외치다가 다른 사람에게 들켜 창피해도, 괜찮아요! 토닥토닥.
+                </b>
+             </li>
+        </ul>
+    </div>
+    <div class="down"></div>
+	</section>
+
+	<section class="containerflow">		
+	<div class="ft">
+	<li>NARCISSUS</li>
+	<li>LOVE YOURSELF</li>
+	<li>NARCISSISM</li>
+	<li>LOVE MYSELF</li>
+	<li>NARCISSUS</li>
+	<li>LOVE YOURSELF</li>
+	<div class="b">
+	<li>NARCISSUS</li>
+	<li >LOVE YOURSELF</li>
+	<li>NARCISSISM</li>
+	<li>LOVE MYSELF</li>
+	<li>NARCISSUS</li>
+	<li>LOVE YOURSELF</li>
+	</div>
+	</div>
+	</section>
+		
+	<section class="wrap">
+	<p class="udd">스스로가 아름답게 보이기 시작했다면, 꽃을 들고 비친 나에게 고백하세요! 무슨 멘트든 좋습니다. 멘트가 잘 생각나지 않는다면 다음 예시들을 참고해 보세요.</p>
+	<div class="flex10">
+	<li><img class="ud" src="image_17.png"><br>나는 나와 연애한다.</li>
+	<li><img class="ud" src="image_18.png"><br>나도 날 위해 <br>꽃을 사줄 수 있어</li>
+	<li><img class="ud" src="image_19.png"><br>I LOVE MYSELF</li>
+	</div>
+
+	<div id="c" class="mid">
+	<p>로맨틱한 무드를 위한 추천 플레이리스트는 다음과 같습니다.</p>
+	<p class="tpl">PLAYLIST</p>
+	<div class="lm">LOVE MYSELF</div>
+	</div>
+	</section>
+	
+	<section class="wrap">
+	<div class="container">
+  	<div class="circle"> 
+    <div class="image"> <img class="img" src="image_20.png">LOVE DIVE</div>
+    <div class="image"> <img class="img" src="image_21.png">4 WALSS</div>
+    <div class="image"> <img class="img" src="image_22.png">TWINKLE</div> 
+    <div class="image"> <img class="img" src="image_23.png">DRIP DROP</div>
+    <div class="image"> <img class="img" src="image_24.png">THANK YOU, NEXT</div>
+    <div class="image"> <img class="img" src="image_25.png">AFTER LIKE</div> 
+    <div class="image"> <img class="img" src="image_26.png">월광</div>
+    <div class="image"> <img class="img" src="image_27.png">BEJEWELD</div>
+  	</div>
+	</div>
+</section>
+
+<section class="backgroundgreen">
+	<div>
+		<div class="navw flexw">
+		<div class="logow flexw"> NARCISSUS </div>
+		<ul class="menuw flexw">
+		<li> <a href="#a">About</a></li>
+		<li> <a href="#b">Package</a></li>
+		<li><a href="#c">Playlist</a></li>
+		<li><a href="#d">Review</a></li>
+		</div>	
+	<div class="wrap">
+	<img class="img30" src="image_30.png">
+	<div class="yly d">DO</div>
+	<div class="yly y">YOU</div>
+	<div class="yly l">LOVE</div>
+	<div class="yly s">YOURSELF</div>
+	<div class="won">
+    NOW
+	</div>
+	</div>
+
+
+
+	<div id="d" class="wrap">
+	<p class="review">Review</p>
+
+
+	
+	<div class="garo"></div>	
+	<div class="sero"></div>
+
+	<div class="flex12"> 
+	<li>Side Effects </li> 
+	<li>No Side Effects</li> </div>
+
+	 <div class="imager q"> <img src="image_31.png">● 자신감이 부족하다면 나르키소스 왜 안써</div>
+	 <div class="imager w"> <img src="image_32.png">● 전엔 거울만 보면 우울했는데 요즘엔 거울에 빠져 살아요</div>
+	 <div class="imager e"> <img src="image_33.png">● 내가 아까워서 연애를 못하겠어요</div>
+	 <div class="imager r"> <img src="image_35.png">● 찬물 세수만 12번 했어요</div>
+	 <div class="imager t"> <img src="image_36.png">● 바빠서 밤에 했는데 거울에 이상한게....</div>
+	</div>
+	</section>
+	
+
+<footer>
+		<div class="wrap flex11">
+		<div class="t4 flex11">NARCISSUS</div>
+			<ul class="fm flex11">
+			<img class="laststar1" src="star.png">
+			<img class="laststar2" src="star.png">
+			<img class="laststar3" src="star.png">
+			<img class="laststar4" src="star.png">
+			<li><b>PAGE</b>
+				<a href="#a">ABOUT</a>
+				<a href="#b">PACKAGE</a>
+				<a href="#c">PLAYLIST</a>
+				<a href="#d">REVIEW</a>
+			</li>
+			<li><b>CONTACT</b>
+				<d>NAME</d>
+				<c>Yerin You, @Yulmu</c>
+				<d>NUMBER + MAIL</d>
+				<c>01055746302 <br> yerin55746302@gmail.com</c>
+			</li>
+			<li><b>DEAR. LOVER</b>
+			</li>
+			</ul>
+		</div>
+		</div>
+		<div class="wrap">
+		<img class="last" src="image_28.png">
+		</div>
+	</footer>
+
+	 <script>const images = document.querySelectorAll('.image');
+const transitionDuration = '0.5s'; // Transition duration
+
+// Apply transition style to all images
+images.forEach(image => {
+    image.style.transition = `transform ${transitionDuration} ease`;
+});
+
+let index = 0;
+
+function moveImages() {
+    const currentImage = images[index];
+    const nextImage = currentImage.nextElementSibling || images[0];
+
+    // Apply transition to the current image
+    currentImage.style.transition = `transform ${transitionDuration} ease`;
+
+    // Move the current image to the end of its parent
+    currentImage.parentNode.appendChild(currentImage);
+
+    index = (index + 1) % images.length;
+}
+
+setTimeout(function() {
+    setInterval(moveImages, 2500);
+}, 2500);
+	 </script>
+
+</body>
+</html>
